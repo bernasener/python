@@ -3,7 +3,7 @@ import pandas
 import tkinter as tk
 from tkinter import messagebox
 
-
+#BernaŞener180209045
 
 
 screen = turtle.Screen()
@@ -38,7 +38,7 @@ writingRemains.write('Remain City Number : 0', font=("Bold"))
 
 a = 82
 while len(guessed_cities) < 83:
-    answer_city = screen.textinput(title="Discover and Learn!", prompt="City Name?").title()
+    answer_city = screen.textinput(title="You can discover the cities!", prompt="City Name: ").title()
 
     if answer_city == "Exit":
         missing_city = []
@@ -65,21 +65,16 @@ while len(guessed_cities) < 83:
             writingRemains.clear()
             writingRemains.write('Remain City Number : {} '.format(a), font=("Bold"))
             if(a == 0):
-                messagebox.showwarning("Warning!","Game is Over, You Won")
+                messagebox.showwarning("Warning!","You WON ! Game is over !")
 
                 break
 
-
-
-
         else:
-            messagebox.showwarning("Warning!","This city is already exist in map")
-
-
+            messagebox.showwarning("Warning!","This city is already exist in map !")
 
     else:
 
-        messagebox.showwarning("Warning!", "There is no city you entered!")
+        messagebox.showwarning("Warning!", "There is no city you entered !")
 
 
 
